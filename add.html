@@ -1,16 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Compare your design — Attune</title><link rel="stylesheet" href="style.css"></head><body><main style="text-align:center">
-<p class="eyebrow">Attune · Human Design</p>
+<title>Compare your design — Soulprint</title><link rel="stylesheet" href="style.css"></head><body><main style="text-align:center">
+<p class="eyebrow">Soulprint · Human Design</p>
 <h1 id="t">Someone shared their design with you</h1>
-<p class="muted">Open it in Attune to see where you spark, what you share, and how you shape each other.</p>
-<p><a id="open" href="#" style="display:inline-block;margin-top:18px;padding:14px 26px;border-radius:14px;background:#f1c472;color:#09091a;text-decoration:none;font-weight:600">Open in Attune</a></p>
-<p><a id="store" href="https://apps.apple.com/app/id0000000000">Get Attune on the App Store</a></p>
+<p class="muted">Open it in Soulprint to see where you spark, what you share, and how you shape each other.</p>
+<p><a id="open" href="#" style="display:inline-block;margin-top:18px;padding:14px 26px;border-radius:14px;background:#f1c472;color:#09091a;text-decoration:none;font-weight:600">Open in Soulprint</a></p>
+<p><a id="store" href="https://apps.apple.com/app/id0000000000">Get Soulprint on the App Store</a></p>
 <p class="muted" style="font-size:14px">The birth details stay in this link; nothing is sent to our servers.</p>
 <script>
   // Data rides in the fragment (after #), which browsers never send to the server.
   var q = location.hash.slice(1), p = new URLSearchParams(q), n = p.get('n');
   if (n) document.getElementById('t').textContent = n + ' shared their design with you';
-  var app = 'attune://person?' + q;
+  var app = 'soulprint://person?' + q;
   document.getElementById('open').href = app;
   if (q) setTimeout(function () { location.href = app; }, 300);
 </script>
